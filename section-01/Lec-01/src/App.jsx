@@ -28,12 +28,19 @@ export default function App() {
   return (
     <div>
       <h1>{count}</h1>
-      <h1>Message:{msg}</h1>
+      <Message message = {msg}/>
       <button onClick={updateState}>UpdateNumber</button>
       <button onClick={reduceState}>ReduceNumber</button>
     </div>
   );
 }
+
+ function Message(props)
+ {
+    return(
+      <h1>Message:{props.message}</h1>
+    );
+ }
 
 // import { useEffect, useRef, useState } from "react";
 
