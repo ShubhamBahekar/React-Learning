@@ -25,3 +25,7 @@ console.log(obj3);
 //spread operator should be at 1st place otherwise before that all key values not going to update
 const obj4 = { Myname: "Ganesh", ...object, age: 20 };
 console.log(obj4);
+
+//object destructuring.
+const { Myname, date, ...remaningvalues } = object;
+console.log("Remaing object values", remaningvalues);
