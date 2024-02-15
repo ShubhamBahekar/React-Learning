@@ -54,3 +54,8 @@ console.log(value3);
 //In object/array  we  set a condition to filter values/objects which includes that values
 const val = object.filter((ele) => ele.favSports.includes("cricket"));
 console.log(val);
+
+const val2 = object
+  .filter((ele) => ele.favSports.includes("cricket"))
+  .map((ele) => ele.author);
+console.log(val2);
