@@ -6,6 +6,7 @@ const object = [
   { title: "tuta hua khwab hu mai", author: "vaibhav", id: 5, age: 29 },
 ];
 
+//length of input and output array will always be same
 //It will iterate for every element and return an  elements with new array
 const array = [1, 2, 3, 4, 5];
 const newArray = array.map((element) => element * 2);
@@ -31,3 +32,7 @@ const newObject2 = object.map((ele) => ({
   newId: getNewId(ele),
 }));
 console.log(newObject2);
+
+//Here for such type of conditions it will return array of boolean values
+const booleanValues = object.map((ele) => ele.age === 26);
+console.log(booleanValues);
